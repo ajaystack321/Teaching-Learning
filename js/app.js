@@ -130,3 +130,26 @@ $("speed").addEventListener("input", () => {
     window.speechSynthesis.cancel();
   }
 });
+
+const examSelector = document.getElementById("examType");
+if (examSelector) {
+  examSelector.addEventListener("change", function () {
+    const exam = this.value;
+    const subject = document.getElementById("subject")?.value || "";
+    const sub = document.getElementById("subSubject")?.value || "";
+    const unit = document.getElementById("unit")?.value || "1";
+    const chapter = document.getElementById("chapter")?.value || "1";
+
+    document.getElementById("examDescription").textContent =
+      `${exam} preparation for ${subject} / ${sub}, Unit ${unit}, Chapter ${chapter}.`;
+
+    document.getElementById("examQuestions").textContent =
+      `Add important questions for ${exam} here.`;
+
+    document.getElementById("examNotes").textContent =
+      `Add revision notes for ${exam} here.`;
+
+    document.getElementById("examPaper").textContent =
+      `Add a practice paper for ${exam} here.`;
+  });
+}
