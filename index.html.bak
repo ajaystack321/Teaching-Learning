@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="B.Ed Learning - Subjects, Units, Chapters, Assignments and Teaching Practice">
+  <title>B.Ed Learning Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">B.Ed Learning</a>
+    <span class="session-label">Learning Portal</span>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Learning Menu</h2>
+      <label for="year">Academic Year</label>
+      <select id="year">
+        <option>2026–2027</option>
+        <option>2025–2026</option>
+        <option>2024–2025</option>
+      </select>
+
+      <label for="session">Session</label>
+      <select id="session">
+        <option value="Regular">Regular</option>
+        <option value="Semester 1">Semester 1</option>
+        <option value="Semester 2">Semester 2</option>
+        <option value="Annual">Annual</option>
+      </select>
+
+      <label for="examType">Test / Exam</label>
+      <select id="examType">
+        <option>General Study</option>
+        <option>Unit Test 1</option>
+        <option>Unit Test 2</option>
+        <option>Mid-Term Exam</option>
+        <option>Final Exam</option>
+        <option>Practical Exam</option>
+        <option>Internal Assessment</option>
+      </select>
+      <label for="subject">Subject</label>
+      <select id="subject"></select>
+
+      <label for="subSubject">Sub-subject</label>
+      <select id="subSubject"></select>
+
+      <label for="unit">Unit</label>
+      <select id="unit"></select>
+
+      <label for="chapter">Chapter</label>
+      <select id="chapter"></select>
+
+      <label for="section">Section</label>
+      <select id="section"></select>
+
+      <p class="hint">Subject चुनकर नीचे उसका content देखें। यह शुरुआती template है; अपना syllabus बाद में जोड़ा जा सकता है।</p>
+    </aside>
+
+    <main class="content">
+      <section class="welcome">
+        <p class="eyebrow">BACHELOR OF EDUCATION</p>
+        <h1 id="pageTitle">B.Ed Learning Portal</h1>
+        <p id="breadcrumb">Subject → Unit → Chapter → Section</p>
+        <div class="meta">
+          <span>Year: <b id="yearDisplay">2026–2027</b></span>
+          <span>Session: <b id="sessionDisplay">Regular</b></span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 id="sectionTitle">अध्ययन सामग्री</h2>
+        <p id="sectionDescription">बाईं ओर से विषय, यूनिट, अध्याय और सेक्शन चुनें।</p>
+        <div class="actions">
+          <button id="speakBtn" type="button">🔊 सुनें</button>
+          <button id="stopBtn" type="button" class="secondary">आवाज़ रोकें</button>
+          <label class="speed-label" for="speed">बोलने की गति</label>
+          <input id="speed" type="range" min="0.7" max="1.3" step="0.1" value="1">
+          <span id="speedValue">1.0×</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Test & Exam Preparation</h2>
+        <p id="examDescription">Select a test or exam to organise study material.</p>
+        <h3>Important Questions</h3>
+        <p id="examQuestions">Add syllabus-based questions here.</p>
+        <h3>Revision Notes</h3>
+        <p id="examNotes">Add revision notes here.</p>
+        <h3>Practice Paper</h3>
+        <p id="examPaper">Add model papers here.</p>
+      </section>
+      <section class="resource-grid">
+        <article class="resource-card">
+          <h3>Assignment</h3>
+          <p>लिखित कार्य और असाइनमेंट सामग्री।</p>
+          <button data-resource="Assignment">देखें</button>
+        </article>
+        <article class="resource-card">
+          <h3>Practical</h3>
+          <p>प्रैक्टिकल कार्य और गतिविधियाँ।</p>
+          <button data-resource="Practical">देखें</button>
+        </article>
+        <article class="resource-card">
+          <h3>Report</h3>
+          <p>रिपोर्ट, फाइल और परियोजना कार्य।</p>
+          <button data-resource="Report">देखें</button>
+        </article>
+        <article class="resource-card">
+          <h3>Teaching Practice</h3>
+          <p>Lesson plan, teaching practice और reflection।</p>
+          <button data-resource="Teaching">देखें</button>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2 id="resourceTitle">अतिरिक्त सामग्री</h2>
+        <p id="resourceDescription">Assignment, Practical, Report या Teaching Practice खोलने के लिए ऊपर विकल्प चुनें।</p>
+      </section>
+
+      <footer>Static Website · HTML · CSS · JavaScript · GitHub Pages Ready</footer>
+    </main>
+  </div>
+</body>
+</html>
+

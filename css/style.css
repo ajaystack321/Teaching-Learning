@@ -54,3 +54,28 @@ footer { color: var(--muted); font-size: .85rem; text-align: center; padding: 30
   .resource-grid { grid-template-columns: 1fr; }
   .topbar { padding: 14px 18px; }
 }
+
+/* Scientific Method answer flowchart */
+.scientific-flowchart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin: 18px 0;
+}
+.scientific-flowchart .flow-step {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #9db5d8;
+  border-radius: 8px;
+  background: #e8effa;
+  color: #17345f;
+  font-weight: 600;
+}
+.scientific-flowchart .flow-arrow {
+  font-size: 22px;
+  color: #234b8a;
+  line-height: 1.2;
+}

@@ -251,3 +251,135 @@ document.getElementById("subSubject")?.addEventListener("change", renderScienceU
 document.getElementById("unit")?.addEventListener("change", renderScienceUnit1Test);
 document.getElementById("examType")?.addEventListener("change", renderScienceUnit1Test);
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderScienceUnit1Test();
+});
+
+/* Science Unit 1 - Unit Test 1 - Question 1 (16 Marks) */
+const scientificMethod16 = {
+  title: "प्रश्न 1. वैज्ञानिक विधि को उदाहरण सहित समझाइए। (16 अंक)",
+  synopsis: [
+    "1. प्रस्तावना",
+    "2. वैज्ञानिक विधि का अर्थ एवं परिभाषा",
+    "3. वैज्ञानिक विधि की प्रमुख विशेषताएँ",
+    "4. वैज्ञानिक विधि के चरण",
+    "5. वैज्ञानिक विधि का Flowchart",
+    "6. उदाहरण: पौधों की वृद्धि पर प्रकाश का प्रभाव",
+    "7. विज्ञान शिक्षण में वैज्ञानिक विधि का महत्त्व",
+    "8. उपसंहार"
+  ],
+  sections: [
+    {
+      title: "1. प्रस्तावना",
+      text: "विज्ञान केवल तथ्यों और सिद्धांतों का संग्रह नहीं है। यह प्रकृति की घटनाओं को समझने, प्रश्न पूछने और प्रमाणों के आधार पर निष्कर्ष निकालने की व्यवस्थित प्रक्रिया है। वैज्ञानिक विधि विद्यार्थियों में जिज्ञासा, तार्किक चिंतन और समस्या-समाधान की क्षमता विकसित करती है।"
+    },
+    {
+      title: "2. अर्थ एवं परिभाषा",
+      text: "वैज्ञानिक विधि वह क्रमबद्ध, तार्किक और प्रमाण-आधारित प्रक्रिया है जिसके द्वारा किसी समस्या का अध्ययन अवलोकन, परिकल्पना, प्रयोग, आँकड़ों के विश्लेषण और निष्कर्ष के माध्यम से किया जाता है।"
+    },
+    {
+      title: "3. प्रमुख विशेषताएँ",
+      text: "वैज्ञानिक विधि की प्रमुख विशेषताएँ क्रमबद्धता, वस्तुनिष्ठता, परीक्षणीयता, तार्किकता, सत्यापनशीलता और संशोधनशीलता हैं। इसमें निष्कर्ष व्यक्तिगत विश्वास के बजाय उपलब्ध प्रमाणों पर आधारित होते हैं। नए प्रमाण मिलने पर परिकल्पना या निष्कर्ष में संशोधन किया जा सकता है।"
+    },
+    {
+      title: "4. वैज्ञानिक विधि के चरण",
+      text: "1. अवलोकन: घटना को ध्यानपूर्वक देखना।\n2. समस्या की पहचान: स्पष्ट प्रश्न निर्धारित करना।\n3. परिकल्पना: संभावित और परीक्षण योग्य उत्तर बनाना।\n4. प्रयोग की योजना: सामग्री, प्रक्रिया और नियंत्रित परिस्थितियाँ तय करना।\n5. प्रयोग एवं आँकड़ा-संग्रह: प्रयोग करना और परिणाम दर्ज करना।\n6. विश्लेषण: आँकड़ों की तुलना और व्याख्या करना।\n7. निष्कर्ष: प्रमाणों के आधार पर परिकल्पना का मूल्यांकन करना।\n8. सत्यापन एवं प्रस्तुतीकरण: प्रक्रिया और परिणाम दूसरों के सामने रखना तथा आवश्यकता पर प्रयोग दोहराना।"
+    },
+    {
+      title: "5. वैज्ञानिक विधि का Flowchart",
+      text: "अवलोकन → समस्या की पहचान → परिकल्पना का निर्माण → प्रयोग की योजना → प्रयोग एवं आँकड़ा-संग्रह → आँकड़ों का विश्लेषण → निष्कर्ष → सत्यापन एवं प्रस्तुतीकरण"
+    },
+    {
+      title: "6. उदाहरण: पौधों की वृद्धि पर प्रकाश का प्रभाव",
+      text: "समस्या: क्या प्रकाश की मात्रा पौधों की वृद्धि को प्रभावित करती है?\nपरिकल्पना: प्रकाश की परिस्थितियों में अंतर पौधों की वृद्धि में अंतर ला सकता है।\nप्रयोग: एक ही प्रकार के दो समान पौधों को समान मिट्टी, पानी और गमलों में रखें। एक को पर्याप्त प्रकाश तथा दूसरे को कम प्रकाश दें। अन्य परिस्थितियाँ यथासंभव समान रखें। निश्चित अवधि तक उनकी ऊँचाई और पत्तियों में बदलाव दर्ज करें।\nअवलोकन एवं विश्लेषण: दोनों पौधों के आँकड़ों की तुलना करें।\nनिष्कर्ष: प्रमाणों के आधार पर परिकल्पना का समर्थन या संशोधन करें। वास्तविक परिणाम प्रयोग की परिस्थितियों पर निर्भर होंगे।"
+    },
+    {
+      title: "7. विज्ञान शिक्षण में महत्त्व",
+      text: "वैज्ञानिक विधि वैज्ञानिक दृष्टिकोण विकसित करती है, अवलोकन और प्रयोग की क्षमता बढ़ाती है, तार्किक एवं आलोचनात्मक चिंतन को प्रोत्साहित करती है, समस्याओं का व्यवस्थित समाधान सिखाती है और विद्यार्थियों को प्रमाणों के आधार पर निर्णय लेना सिखाती है। इससे विज्ञान को रटने के बजाय गतिविधियों और अनुभवों के माध्यम से सीखने में सहायता मिलती है।"
+    },
+    {
+      title: "8. उपसंहार",
+      text: "वैज्ञानिक विधि विज्ञान के अध्ययन और अनुसंधान की एक महत्त्वपूर्ण प्रक्रिया है। अवलोकन, परिकल्पना, प्रयोग, विश्लेषण और निष्कर्ष के माध्यम से विद्यार्थी घटनाओं को व्यवस्थित रूप से समझते हैं। विज्ञान शिक्षण में इसका उपयोग जिज्ञासा, स्वतंत्र चिंतन और प्रमाण-आधारित निर्णय क्षमता को बढ़ाता है।"
+    }
+  ]
+};
+
+function renderScientificMethod16() {
+  const subject = document.getElementById("subject");
+  const sub = document.getElementById("subSubject");
+  const unit = document.getElementById("unit");
+  const exam = document.getElementById("examType");
+  if (!subject || !sub || !unit || !exam) return;
+
+  const isScience = subject.value === "Pedagogy" &&
+    sub.value === "Science" &&
+    unit.value === "1" &&
+    exam.value === "Unit Test 1";
+
+  let panel = document.getElementById("scientificMethodPanel");
+  if (panel) panel.remove();
+  if (!isScience) return;
+
+  panel = document.createElement("section");
+  panel.id = "scientificMethodPanel";
+  panel.className = "card";
+
+  const title = document.createElement("h2");
+  title.textContent = scientificMethod16.title;
+  panel.appendChild(title);
+
+  const synopsisTitle = document.createElement("h3");
+  synopsisTitle.textContent = "Synopsis (उत्तर की रूपरेखा)";
+  panel.appendChild(synopsisTitle);
+
+  const list = document.createElement("ol");
+  scientificMethod16.synopsis.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item.replace(/^\d+\.\s*/, "");
+    list.appendChild(li);
+  });
+  panel.appendChild(list);
+
+  const answerTitle = document.createElement("h3");
+  answerTitle.textContent = "विस्तृत उत्तर";
+  panel.appendChild(answerTitle);
+
+  scientificMethod16.sections.forEach(section => {
+    const heading = document.createElement("h3");
+    heading.textContent = section.title;
+    panel.appendChild(heading);
+
+    if (section.title.includes("Flowchart")) {
+      const flow = document.createElement("div");
+      flow.className = "scientific-flowchart";
+      section.text.split(" → ").forEach((step, index, arr) => {
+        const box = document.createElement("div");
+        box.className = "flow-step";
+        box.textContent = step;
+        flow.appendChild(box);
+        if (index < arr.length - 1) {
+          const arrow = document.createElement("div");
+          arrow.className = "flow-arrow";
+          arrow.textContent = "↓";
+          flow.appendChild(arrow);
+        }
+      });
+      panel.appendChild(flow);
+    } else {
+      const p = document.createElement("p");
+      p.style.whiteSpace = "pre-line";
+      p.textContent = section.text;
+      panel.appendChild(p);
+    }
+  });
+
+  const main = document.querySelector("main.content");
+  if (main) main.appendChild(panel);
+}
+
+["subject", "subSubject", "unit", "examType"].forEach(id => {
+  document.getElementById(id)?.addEventListener("change", renderScientificMethod16);
+});
+document.addEventListener("DOMContentLoaded", renderScientificMethod16);
+setTimeout(renderScientificMethod16, 300);
