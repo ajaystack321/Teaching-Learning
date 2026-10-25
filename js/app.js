@@ -153,3 +153,101 @@ if (examSelector) {
       `Add a practice paper for ${exam} here.`;
   });
 }
+
+/* Science Unit 1 - Unit Test 1 question bank */
+const scienceUnit1Questions = [
+  {
+    question: "Q1. Explain the Scientific Method with an example.",
+    answer: `The Scientific Method is a systematic process used to investigate problems, collect evidence, test hypotheses and draw conclusions.
+
+Steps:
+1. Observation: Notice a phenomenon or problem.
+2. Question: Formulate a clear question.
+3. Hypothesis: Suggest a testable explanation.
+4. Experiment: Conduct a controlled test.
+5. Data Collection: Record observations and results.
+6. Analysis: Interpret the collected data.
+7. Conclusion: Decide whether the evidence supports the hypothesis.
+8. Communication: Share the results so others can evaluate them.
+
+Example:
+A student observes that one plant near a window grows faster than another plant kept in a darker place. The student hypothesizes that greater light helps plant growth. Both plants are given the same soil, water and pot size, but different light exposure. The student measures their growth over two weeks and compares the results. The evidence helps evaluate the hypothesis.
+
+Synopsis:
+The Scientific Method develops scientific thinking, observation, experimentation, evidence-based reasoning and problem-solving. A good investigation changes one main variable at a time while keeping other relevant conditions as similar as possible. Results may support, reject or require revision of a hypothesis.`
+  },
+  {
+    question: "Q2. Explain Bloom's Taxonomy.",
+    answer: `Bloom's Taxonomy is a framework for classifying educational learning objectives according to levels of cognitive complexity. The revised cognitive taxonomy is commonly associated with Anderson and Krathwohl.
+
+Six levels of the revised taxonomy:
+1. Remember: Recall facts and information.
+2. Understand: Explain ideas in one's own words.
+3. Apply: Use knowledge in a new situation.
+4. Analyze: Break information into parts and identify relationships.
+5. Evaluate: Make judgments using criteria and evidence.
+6. Create: Produce a new plan, product or explanation.
+
+Science classroom example:
+Remember: Name the parts of a plant.
+Understand: Explain the function of roots.
+Apply: Use knowledge of roots to explain how a plant absorbs water.
+Analyze: Compare root systems of two plants.
+Evaluate: Assess which experimental setup gives stronger evidence about plant growth.
+Create: Design an investigation to test how light affects plant growth.
+
+Synopsis:
+Bloom's Taxonomy helps teachers write measurable learning outcomes, plan questions from basic recall to higher-order thinking, design activities and assess learning. Teachers should select levels according to the learning objective and students' needs rather than treating the taxonomy as a rigid sequence for every lesson.`
+  }
+];
+
+function renderScienceUnit1Test() {
+  const subject = document.getElementById("subject");
+  const sub = document.getElementById("subSubject");
+  const unit = document.getElementById("unit");
+  const exam = document.getElementById("examType");
+
+  if (!subject || !sub || !unit || !exam) return;
+  if (subject.value !== "Pedagogy" ||
+      sub.value !== "Science" ||
+      unit.value !== "1" ||
+      exam.value !== "Unit Test 1") return;
+
+  const existing = document.getElementById("scienceUnit1QuestionBank");
+  if (existing) existing.remove();
+
+  const panel = document.createElement("section");
+  panel.id = "scienceUnit1QuestionBank";
+  panel.className = "card";
+
+  const heading = document.createElement("h2");
+  heading.textContent = "Science — Unit 1 — Unit Test 1";
+  panel.appendChild(heading);
+
+  scienceUnit1Questions.forEach(item => {
+    const article = document.createElement("article");
+    article.className = "resource-card";
+
+    const q = document.createElement("h3");
+    q.textContent = item.question;
+
+    const answerTitle = document.createElement("h4");
+    answerTitle.textContent = "Answer";
+
+    const answer = document.createElement("p");
+    answer.style.whiteSpace = "pre-line";
+    answer.textContent = item.answer;
+
+    article.append(q, answerTitle, answer);
+    panel.appendChild(article);
+  });
+
+  const target = document.querySelector("main.content");
+  if (target) target.appendChild(panel);
+}
+
+document.getElementById("subject")?.addEventListener("change", renderScienceUnit1Test);
+document.getElementById("subSubject")?.addEventListener("change", renderScienceUnit1Test);
+document.getElementById("unit")?.addEventListener("change", renderScienceUnit1Test);
+document.getElementById("examType")?.addEventListener("change", renderScienceUnit1Test);
+
